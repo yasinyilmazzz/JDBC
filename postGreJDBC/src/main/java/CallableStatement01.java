@@ -1,6 +1,12 @@
 import java.sql.*;
 
 public class CallableStatement01 {
+    /*
+    - In Java, ifthe return type of method is "any data type" or "void" we name all as methods.
+    - But in SQL, if something returns "any data" it is called "function",
+        something does not return any data it is called "procedure"
+     */
+
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
         Class.forName("org.postgresql.Driver");

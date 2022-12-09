@@ -39,7 +39,7 @@ public class PreparedStatement01 {
             System.out.println(resultSet1.getInt(1) + "--" + resultSet1.getString(2) + "--" + resultSet1.getInt(3));
         }
         //===> in this example output is blank. Because, in previous example cursor located at end point of table.
-        //===> Because of that create a nev resultSet
+        //===> Cursor can not go back, Because of that create a new resultSet
         ResultSet resultSet2 = st.executeQuery(sql2);
         while (resultSet2.next()){
             System.out.println(resultSet2.getInt(1) + "--" + resultSet2.getString(2) + "--" + resultSet2.getInt(3));
